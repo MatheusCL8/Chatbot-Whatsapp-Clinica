@@ -1,10 +1,10 @@
-// Supports ES6
-// import { create, Whatsapp } from 'sulla';
-const bot = require("venom-bot");
-const { db } = require("../src/models/banco");
-const { step } = require("../src/models/stages");
+const venom = require('venom-bot');
+const { db } = require("./src/models/banco");
+const { step } = require("./src/models/stages");
 
-bot.create().then((client) => start(client));
+venom
+  .create()
+  .then((client) => start(client));
 
 function start(client) {
     client.onMessage((message) => {
@@ -28,7 +28,7 @@ function getStage(user) {
         //Se for a primeira vez que entra e contato
         db[user] = {
             stage: 0,
-            itens: [],
+            itens: 0,
         };
         return db[user].stage;
     }

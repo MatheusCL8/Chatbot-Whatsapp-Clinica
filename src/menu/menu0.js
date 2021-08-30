@@ -1,16 +1,19 @@
-const cardapio0 = {
+const opcoes = {
   1: {
-    description: "Produto 1",
-    price: "100.0",
+    description: "1️⃣ - Profissionais / Serviços"
   },
   2: {
-    description: "Produto 2",
-    price: "29.95",
+    description: "2️⃣ - Horário Disponível"
   },
   3: {
-    description: "Serviço 1",
-    price: "425.50",
+    description: "3️⃣ - Agendamento"
+  },
+  4: {
+    description: "4️⃣ - Dúvidas e Esclarecimentos"
+  },
+  5: {
+    description: "5️⃣ - Encerrar conversa"
   },
 };
 
-exports.menu0 = cardapio0;
+exports.menu0 = opcoes;

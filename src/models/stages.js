@@ -4,7 +4,7 @@ var stages = {
         obj: require("../stages/0"),
     },
     1: {
-        descricao: "Vendas",
+        descricao: "Profissioais",
         obj: require("../stages/1"),
     },
     2: {

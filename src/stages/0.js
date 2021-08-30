@@ -15,18 +15,16 @@ function execute(user, msg, contato) {
     }
 
 
-    let menu = " CARDAPIO \n\n";
+    let menu = "";
 
     Object.keys(menu0).forEach((value) => {
         let element = menu0[value];
-        menu += `${value} - ${element.description}        R$ ${element.price} \n`;
+        menu += `${element.description}\n`;
     });
 
     db[user].stage = 1;
 
-    return [
-        menu,
-        `${time} ${contato} sou uma assistente virtual, irei apresentar o carpádio, para fazer o pedido basta enviar o codigo do produto`,
+    return [`${time}, a *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA* agradece seu contato, ${contato}.\nPara facilitar o atendimento, envie uma das opções abaixo, conforme a sua dúvida. Como podemos ajudar? 🥰\n\n${menu}`,
     ];
 }
 
