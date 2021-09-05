@@ -12,8 +12,8 @@ const opcoes = {
     description: "4️⃣ - Dúvidas e Esclarecimentos"
   },
   5: {
-    description: "5️⃣ - Encerrar conversa"
-  },
+    description: "5️⃣ - Encerrar Conversa"
+  }
 };
 
 exports.menu0 = opcoes;

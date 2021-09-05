@@ -8,21 +8,18 @@ var stages = {
         obj: require("../stages/1"),
     },
     2: {
-        descricao: "Resumo",
+        descricao: "Horário Disponivel",
         obj: require("../stages/2"),
     },
     3: {
-        descricao: "Endereço",
+        descricao: "Agendamento",
         obj: require("../stages/3"),
     },
     4: {
-        descricao: "Enceramento",
+        descricao: "Duvidas e Esclarecimentos",
         obj: require("../stages/4"),
     },
-    5: {
-        descricao: "Forma de Pagamento",
-        obj: require("../stages/5"),
-    },
+
 };
 
 exports.step = stages;

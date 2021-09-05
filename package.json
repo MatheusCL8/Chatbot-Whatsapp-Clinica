@@ -4,13 +4,27 @@
   "description": "Bot",
   "main": "./src/index.js",
   "scripts": {
-    "start": "node ./src/index.js",
+    "start": "electron .",
+    "build":"electron-packager ./ Chatbot --arc x64 -asar --icon ./src/clinica.ico --overwrite",
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "venom-bot": "^3.1.2"
-  }
+  },
+  "devDependencies": {
+    "electron": "^14.0.0",
+    "electron-packager": "^15.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusCL8/Whatsapp-bot-NodeJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatheusCL8/Whatsapp-bot-NodeJS/issues"
+  },
+  "homepage": "https://github.com/MatheusCL8/Whatsapp-bot-NodeJS#readme"
 }

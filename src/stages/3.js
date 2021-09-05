@@ -1,7 +1,10 @@
 const { db } = require("../models/banco");
 const { menu0 } = require("../menu/menu0");
 
-function execute(user, msg) {
+var dados = [];
+
+function execute(user, msg,contato,client) {
+    dados.push(msg)
     let menu = "";
 
     Object.keys(menu0).forEach((value) => {
@@ -10,22 +13,24 @@ function execute(user, msg) {
     });
     console.log(db[user].itens);
     if (db[user].itens === 0) {
-        console.log('aqui')
         db[user].itens=1;
-        return ["Qual o melhor dia para você agendar? Por favor, coloque no formato dd/mm/aaaa (dia, mês, ano)"];
+        client.sendText(user,"Qual o melhor dia para você agendar? Por favor, coloque no formato dd/mm/aaaa (dia, mês, ano)");
     }
-    if (db[user].itens === 1) {
+    else if (db[user].itens === 1) {
         db[user].itens=2;
-        return ["Qual o serviço você quer agendar?"];
+        client.sendText(user,"Qual o serviço você quer agendar?");
 
     }
     else if (db[user].itens === 2) {
+        dados.push('Telefone: 939'+user.slice(4,12))
+        let dados_cliente=`Cliente: ${dados[0]}\nTelefone: ${dados[3]}\nData para Agendamento: ${dados[1]}\nServiço solicitado: ${dados[2]}`
+        console.log(dados);
         db[user].stage = 1;
         db[user].itens=0;
-        return [`Perfeito! Entraremos em contato por ligação logo em breve! Agradecemos a sua preferencia!\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 5️⃣ para encerrar\n${menu}`];
-
+        client.sendText(user,`Perfeito! Acabamos de enviar sua solicitação para a secretaria. Entraremos em contato logo em breve! Agradecemos a sua preferencia!\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 5️⃣ para encerrar\n${menu}`);
+        //let alguem='5593'+'@c.us'
+        //client.sendText(alguem,dados_cliente);
     }
 
 }
-
 exports.execute = execute;
