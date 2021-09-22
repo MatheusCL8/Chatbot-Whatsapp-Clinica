@@ -74,7 +74,8 @@ venom
 
 function start(client) {
     client.onMessage((message) => {
-    if(message.isGroupMsg === false){
+    //if(message.isGroupMsg === false){
+      console.log(message.from);
         let resp = step[getStage(message.from)].obj.execute(
             message.from,
             message.body,
@@ -85,7 +86,7 @@ function start(client) {
             const element = resp[index];
             client.sendText(message.from, element);
         }
-    }
+    
     });
 }
 

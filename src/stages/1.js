@@ -10,22 +10,26 @@ function execute(user, msg,contato,client) {
     });
     if (msg === "1") {
         db[user].stage = 1;
-        client.sendText(user, `➡ *Dra. Ana Caroline Calderaro Farias*: _Dentista_\n\n➡ *Dra Rosália Couto*: _Endodontista_\n\n➡ *Sr. Igor Ramos*: _Psicólogo_\n\n➡ *Sra Eliana Oliveira*: _Psicóloga_\n\n➡ *Dra Nazaré Monteiro*: _Fonoaudióloga_\n\n➡ *Sra. Amanda Marinho*: _Nutricionista_\n\n➡ *Dr. Júlio Sanchez*: _Pediatra_\n\n➡ *Dr. Genilson Oliveira*: _Dentista_\n\n➡ *Dra. Andressa Ramalho Walfredo*: _Ortodontista_\n\n➡ *Dr. João Batista Alves Júnior*: _Alergista_\n\n➡ *Sra. Tereza Cristina Feijão Tavares*: _Terapêuta Ocupacional_\n\n➡ *Dra Cláudia Inês Guáquitas Arias*: _Raio X Digital Odontológico_\n\n❌ *Não Temos*:\n    ➡ _Neurologista_\n    ➡ _Ortopedista_\n    ➡ _Cardiologista_\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 5️⃣ para encerrar\n${menu}`);
+        client.sendText(user, `➡ _Cirurgiã Dentista / Especialista em Bucomaxilofacial e Implantodontia_\n\n➡ _Endodontista_\n\n➡ _Endodontista e Clínico Geral (Odontológico)_\n\n➡ _Psicólogo_\n\n➡ _Psicóloga_\n\n➡ _Ortopedista e Traumatologista_\n\n➡ _Pediatra_\n\n➡ _Ortodontista_\n\n➡ _Alergista_\n\n➡ _Terapeuta Ocupacional_\n\n➡ _Dematologista_\n\n☢ _Raio-X Digital Odontológico_\n\n❌ *Não Temos*:\n    ➡ _Neurologista_\n    ➡ _Ginecologista_\n    ➡ _Cardiologista_`);
+        client.sendText(user, `APARELHOS ORTODÔNTICOS 🤩\n\n🔸 Aparelho Convencional - R$ 600,00 reais (Superior e Inferior)\n🔸 Aparelho Estético - R$ 1.000 reais (Superior e Inferior)\n🔸 Aparelho Auto-Ligado - R$ 1.200 (Superior e Inferior)\nAceitamos Pix e Parcelamos no Cartão de Crédito e Débito 💰💳\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 6️⃣ para encerrar\n${menu}`);
     }
-
     if (msg === "2") {
         db[user].stage = 2;
-        client.sendText(user, "Selecione o numero do profissional que deseja ver o horario:\n\n1️⃣ *Dra. Ana Caroline Calderaro Farias*\n\n2️⃣ *Dra Rosália Canto*\n\n3️⃣ *Dra Loretta Farias Valente*\n\n4️⃣ *Dr. Kalil Antônio Kzan Pereira*\n\n5️⃣ *Dr. Igor Ramos*\n\n6️⃣ *Dra. Victoria Gonçalves*\n\n7️⃣ *Dr. Júlio Sanchez*\n\n8️⃣ *Dra. Andressa Ramalho Walfredo*\n\n9️⃣ *Dr. João Batista Alves Júnior*\n\n1️⃣0️⃣ *Sra. Tereza Cristina Feijão Tavares*\n\n1️⃣1️⃣ *Sra. Tereza Cristina Feijão Tavares*");
+        client.sendText(user, "Selecione o numero do profissional que deseja ver o horario:\n\n1️⃣ *Dra. Ana Caroline Calderaro Farias*: _Cirurgiã Dentista / Especialista em Bucomaxilofacial e Implantodontia_\n\n2️⃣ *Dra Rosália Canto*: _Endodontista_\n\n3️⃣ *Dra Loretta Farias Valente*: _Endodontista e Clínica Geral (Odontológica)_\n\n4️⃣ *Dr. Kalil Antônio Kzan Pereira*: _Ortopedista e Traumatologista_\n\n5️⃣ *Dr. Igor Ramos*: _Psicólogo_\n\n6️⃣ *Dra. Victoria Gonçalves*: _Psicóloga_\n\n7️⃣ *Dr. Júlio Sanchez*: _Pediatra_\n\n8️⃣ *Dra. Andressa Ramalho Walfredo*: _Ortodontista_\n\n9️⃣ *Dr. João Batista Alves Júnior*: Alergista\n\n1️⃣0️⃣ *Sra. Tereza Cristina Feijão Tavares*: Terapêuta Ocupacional\n\n1️⃣1️⃣ *Dra. Cláudia Inês Guáquitas Arias*: _Dermatologista_");
     }
     if (msg === "3") {
+        db[user].stage = 1;
+        client.sendText(user, `RAIO-X DIGITAL ODONTOLÓGICO ☢️\n\n➡️ Raio-X Periapical - R$ 100,00 reais\n➡️ Radiografia Panorâmica - R$ 200,00 reais\n➡️ Documentação de Implante - R$ 200,00 reais\n➡️ Documentação Ortodôntica Completa - R$ 250,00 reais\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 6️⃣ para encerrar\n${menu}`);
+    }
+    if (msg === "4") {
         db[user].stage = 3;
         client.sendText(user, "Para realizarmos seu agendamento, será necessário alguns dados.\n\nQual é o seu nome completo, por gentileza?");
     }
-    if (msg === "4") {
+    if (msg === "5") {
         db[user].stage = 0;
         client.sendText(user, "Para tirar suas duvidas e lhe dar esclarecimentos, estarei lhe enviando um link que irá lhe direcionar para a recepção do *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA*","Clique neste link 👉colocar link aqui");
     }
-    if (msg === "5") {
+    if (msg === "6") {
         db[user].stage = 0;
         let resp=[`Agradecemos o seu contato! Esperamos poder falar com você novamente, ${contato}.`,
         "Caso queira ficar por dentro de tudo sobre a *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA*, siga a gente nas redes sociais! Acesse os links e faça parte de nossa família"
