@@ -2,7 +2,6 @@ const { db } = require("../models/banco");
 const { hora } = require("../menu/hora");
 const { menu0 } = require("../menu/menu0");
 
-var valores=[0,1,2,3,4,5,6,7,8,9,10];
 
 function execute(user, msg,contato,client) {
     let menu = "";
@@ -14,7 +13,7 @@ function execute(user, msg,contato,client) {
 
     if (Number(msg)-1 in hora) {
         db[user].stage = 1;
-        let text=`*${hora[Number(msg)-1].description}*\n${hora[Number(msg)-1].h}\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 6️⃣ para encerrar\n${menu}`;
+        let text=`*${hora[Number(msg)-1].description}*\n${hora[Number(msg)-1].h}\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`;
         client.sendImage(user,`./src/imagens/${hora[Number(msg)-1].description}.jpg`,'horario',text)
         .then((result) => {
             console.log('Result: ', result); //return object success

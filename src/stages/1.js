@@ -11,7 +11,7 @@ function execute(user, msg,contato,client) {
     if (msg === "1") {
         db[user].stage = 1;
         client.sendText(user, `➡ _Cirurgiã Dentista / Especialista em Bucomaxilofacial e Implantodontia_\n\n➡ _Endodontista_\n\n➡ _Endodontista e Clínico Geral (Odontológico)_\n\n➡ _Psicólogo_\n\n➡ _Psicóloga_\n\n➡ _Ortopedista e Traumatologista_\n\n➡ _Pediatra_\n\n➡ _Ortodontista_\n\n➡ _Alergista_\n\n➡ _Terapeuta Ocupacional_\n\n➡ _Dematologista_\n\n☢ _Raio-X Digital Odontológico_\n\n❌ *Não Temos*:\n    ➡ _Neurologista_\n    ➡ _Ginecologista_\n    ➡ _Cardiologista_`);
-        client.sendText(user, `APARELHOS ORTODÔNTICOS 🤩\n\n🔸 Aparelho Convencional - R$ 600,00 reais (Superior e Inferior)\n🔸 Aparelho Estético - R$ 1.000 reais (Superior e Inferior)\n🔸 Aparelho Auto-Ligado - R$ 1.200 (Superior e Inferior)\nAceitamos Pix e Parcelamos no Cartão de Crédito e Débito 💰💳\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 6️⃣ para encerrar\n${menu}`);
+        client.sendText(user, `APARELHOS ORTODÔNTICOS 🤩\n\n🔸 Aparelho Convencional - R$ 600,00 reais (Superior e Inferior)\n🔸 Aparelho Estético - R$ 1.000 reais (Superior e Inferior)\n🔸 Aparelho Auto-Ligado - R$ 1.200 (Superior e Inferior)\nAceitamos Pix e Parcelamos no Cartão de Crédito e Débito 💰💳\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`);
     }
     if (msg === "2") {
         db[user].stage = 2;
@@ -19,17 +19,21 @@ function execute(user, msg,contato,client) {
     }
     if (msg === "3") {
         db[user].stage = 1;
-        client.sendText(user, `RAIO-X DIGITAL ODONTOLÓGICO ☢️\n\n➡️ Raio-X Periapical - R$ 100,00 reais\n➡️ Radiografia Panorâmica - R$ 200,00 reais\n➡️ Documentação de Implante - R$ 200,00 reais\n➡️ Documentação Ortodôntica Completa - R$ 250,00 reais\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 6️⃣ para encerrar\n${menu}`);
+        client.sendText(user, `RAIO-X DIGITAL ODONTOLÓGICO ☢️\n\n➡️ Raio-X Periapical - R$ 100,00 reais\n➡️ Radiografia Panorâmica - R$ 200,00 reais\n➡️ Documentação de Implante - R$ 200,00 reais\n➡️ Documentação Ortodôntica Completa - R$ 250,00 reais\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`);
     }
     if (msg === "4") {
         db[user].stage = 3;
         client.sendText(user, "Para realizarmos seu agendamento, será necessário alguns dados.\n\nQual é o seu nome completo, por gentileza?");
     }
     if (msg === "5") {
+        db[user].stage = 4;
+        client.sendText(user, "Selecione o numero do serviço que deseja ver a disponibilidade e o profissional:\n\n1️⃣ _Ortopedista e Traumatologista_\n\n2️⃣ _Psicólogo_");
+    }
+    if (msg === "6") {
         db[user].stage = 0;
         client.sendText(user, "Para tirar suas duvidas e lhe dar esclarecimentos, estarei lhe enviando um link que irá lhe direcionar para a recepção do *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA*","Clique neste link 👉colocar link aqui");
     }
-    if (msg === "6") {
+    if (msg === "7") {
         db[user].stage = 0;
         let resp=[`Agradecemos o seu contato! Esperamos poder falar com você novamente, ${contato}.`,
         "Caso queira ficar por dentro de tudo sobre a *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA*, siga a gente nas redes sociais! Acesse os links e faça parte de nossa família"

@@ -12,10 +12,13 @@ const opcoes = {
     description: "4️⃣ - 📅 Agendamento"
   },
   5: {
-    description: "5️⃣ - ❔ Dúvidas e Esclarecimentos"
+    description: "5️⃣ - 🏥 UNIMED"
   },
   6: {
-    description: "6️⃣ - ❌ Encerrar Conversa"
+    description: "6️⃣ - ❔ Dúvidas e Esclarecimentos"
+  },
+  7: {
+    description: "7️⃣ - ❌ Encerrar Conversa"
   }
 };
 

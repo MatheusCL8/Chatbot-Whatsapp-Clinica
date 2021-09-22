@@ -32,7 +32,7 @@ function execute(user, msg,contato,client) {
         console.log(dados);
         db[user].stage = 1;
         db[user].itens=0;
-        client.sendText(user,`Perfeito! Acabamos de enviar sua solicitação para a secretaria. Entraremos em contato logo em breve! Agradecemos a sua preferencia!\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 5️⃣ para encerrar\n${menu}`);
+        client.sendText(user,`Perfeito! Acabamos de enviar sua solicitação para a secretaria. Entraremos em contato logo em breve! Agradecemos a sua preferencia!\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`);
         //let alguem='559391426581-1631324747@g.us'
         //client.sendText(alguem,dados_cliente);
     }
