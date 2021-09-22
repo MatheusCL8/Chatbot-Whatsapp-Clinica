@@ -32,7 +32,7 @@ function execute(user, msg,contato,client) {
     if (msg === "6") {
         db[user].stage = 0;
         client.sendText(user, `Para tirar suas duvidas e fazer esclarecimentos sobre qualquer assunto que não tenha sido colocado ans mensagens, ligue para o nosso numero (93) 99114-7747! A *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA* estará feliz em receber sua ligação!`);
-        cliente.sendText(user,`Envie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`)
+        client.sendText(user,`Envie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`)
     }
     if (msg === "7") {
         db[user].stage = 0;
