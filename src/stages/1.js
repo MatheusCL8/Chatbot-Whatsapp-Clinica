@@ -10,8 +10,9 @@ function execute(user, msg,contato,client) {
     });
     if (msg === "1") {
         db[user].stage = 1;
-        client.sendText(user, `➡ _Cirurgiã Dentista / Especialista em Bucomaxilofacial e Implantodontia_\n\n➡ _Endodontista_\n\n➡ _Endodontista e Clínico Geral (Odontológico)_\n\n➡ _Psicólogo_\n\n➡ _Psicóloga_\n\n➡ _Ortopedista e Traumatologista_\n\n➡ _Pediatra_\n\n➡ _Ortodontista_\n\n➡ _Alergista_\n\n➡ _Terapeuta Ocupacional_\n\n➡ _Dematologista_\n\n☢ _Raio-X Digital Odontológico_\n\n❌ *Não Temos*:\n    ➡ _Neurologista_\n    ➡ _Ginecologista_\n    ➡ _Cardiologista_`);
         client.sendText(user, `APARELHOS ORTODÔNTICOS 🤩\n\n🔸 Aparelho Convencional - R$ 600,00 reais (Superior e Inferior)\n🔸 Aparelho Estético - R$ 1.000 reais (Superior e Inferior)\n🔸 Aparelho Auto-Ligado - R$ 1.200 (Superior e Inferior)\nAceitamos Pix e Parcelamos no Cartão de Crédito e Débito 💰💳\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`);
+        client.sendText(user, `➡ _Cirurgiã Dentista / Especialista em Bucomaxilofacial e Implantodontia_\n\n➡ _Endodontista_\n\n➡ _Endodontista e Clínico Geral (Odontológico)_\n\n➡ _Psicólogo_\n\n➡ _Psicóloga_\n\n➡ _Ortopedista e Traumatologista_\n\n➡ _Pediatra_\n\n➡ _Ortodontista_\n\n➡ _Alergista_\n\n➡ _Terapeuta Ocupacional_\n\n➡ _Dematologista_\n\n☢ _Raio-X Digital Odontológico_\n\n❌ *Não Temos*:\n    ➡ _Neurologista_\n    ➡ _Ginecologista_\n    ➡ _Cardiologista_`);
+        
     }
     if (msg === "2") {
         db[user].stage = 2;
@@ -30,9 +31,10 @@ function execute(user, msg,contato,client) {
         client.sendText(user, "Selecione o numero do serviço que deseja ver a disponibilidade e o profissional:\n\n1️⃣ _Ortopedista e Traumatologista_\n\n2️⃣ _Psicólogo_");
     }
     if (msg === "6") {
-        db[user].stage = 0;
-        client.sendText(user, `Para tirar suas duvidas e fazer esclarecimentos sobre qualquer assunto que não tenha sido colocado ans mensagens, ligue para o nosso numero (93) 99114-7747! A *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA* estará feliz em receber sua ligação!`);
+        db[user].stage = 1;
         client.sendText(user,`Envie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`)
+        client.sendText(user, `Para tirar suas duvidas e fazer esclarecimentos sobre qualquer assunto que não tenha sido colocado ans mensagens, ligue para o nosso numero (93) 99114-7747! A *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA* estará feliz em receber sua ligação!`);
+        
     }
     if (msg === "7") {
         db[user].stage = 0;
