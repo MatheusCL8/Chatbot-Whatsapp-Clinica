@@ -6,12 +6,12 @@ function execute(user, msg, contato,client) {
     // Obtem a hora atual do PC para definir se vai ser Bom dia, tarde ou noite.
     stamp = new Date();
     hours = stamp.getHours();
-    if (hours >= 18 && hours < 24) {
-        time = "Boa noite"
+    if (hours >= 6 && hours < 12) {
+        time = "Bom dia"
     } else if (hours >= 12 && hours < 18) {
         time = "Boa tarde"
-    } else if (hours >= 0 && hours < 12) {
-        time = "Bom dia"
+    } else if (hours >= 18 && hours < 22) {
+        time = "Boa noite"
     }
 
 
