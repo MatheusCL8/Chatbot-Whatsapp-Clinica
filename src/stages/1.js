@@ -37,18 +37,29 @@ function execute(user, msg,contato,client) {
         
     }
     if (msg === "7") {
-        db[user].stage = 0;
+        db[user].stage = 1;
         let resp=[`Agradecemos o seu contato! Esperamos poder falar com você novamente, ${contato}.`,
         "Caso queira ficar por dentro de tudo sobre a *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA*, siga a gente nas redes sociais! Acesse os links e faça parte de nossa família"
 ];
         for (let index = 0; index < resp.length; index++) {
             const element = resp[index];
             client.sendText(user, element);
+        
+        setTimeout(function() {
+                db[user].stage = 0
+            }, 360000);
         }
+    }
+    if(msg.toLowerCase().match(/obrigado/)){
+        db[user].stage = 0;
+        client.sendText(user, "Nós que agradecemos! Tenha um ótimo dia! 😉");
     }
 
     if (!menu0[msg]) {
-        client.sendText( user,"Desculpe, mas você digitou um codigo inválido ❌\nPor Favor, selecione cum codigo válido ✔")
+        setTimeout(function() {
+            db[user].stage = 0
+        }, 180000);
+        
     }
 
 }

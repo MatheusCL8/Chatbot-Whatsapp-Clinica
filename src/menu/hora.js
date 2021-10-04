@@ -13,7 +13,7 @@ const horario = {
       },
     3: {
         description: "Dr. Kalil Antônio Kzan Pereira",
-        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 4️⃣ - Dúvidas e Esclarecimentos",
+        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 6️⃣ - Dúvidas e Esclarecimentos",
       },
     4: {
       description: "Dr. Igor Ramos",
@@ -29,19 +29,19 @@ const horario = {
     },
     7: {
         description: "Dra. Andressa Ramalho Walfredo",
-        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 4️⃣ - Dúvidas e Esclarecimentos",
+        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 6️⃣ - Dúvidas e Esclarecimentos",
     },
     8: {
         description: "Dr. João Batista Alves Júnior",
-        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 4️⃣ - Dúvidas e Esclarecimentos",
+        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 6️⃣ - Dúvidas e Esclarecimentos",
     },
     9: {
         description: "Dra. Tereza Cristina Feijão Tavares",
-        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 4️⃣ - Dúvidas e Esclarecimentos",
+        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 6️⃣ - Dúvidas e Esclarecimentos",
     },
     10: {
         description: "Dra Cláudia Inês Guáquitas Arias",
-        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 4️⃣ - Dúvidas e Esclarecimentos",
+        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 6️⃣ - Dúvidas e Esclarecimentos",
     },
   };
   
