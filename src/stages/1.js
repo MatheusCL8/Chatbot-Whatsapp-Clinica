@@ -44,24 +44,23 @@ function execute(user, msg,contato,client) {
         for (let index = 0; index < resp.length; index++) {
             const element = resp[index];
             client.sendText(user, element);
-        
-        setTimeout(function() {
-                db[user].stage = 0
-            }, 360000);
         }
+        setTimeout(function() {
+            db[user].stage = 0
+        }, 180000);
     }
     if(msg.toLowerCase().match(/obrigado/)){
         db[user].stage = 0;
         client.sendText(user, "Nós que agradecemos! Tenha um ótimo dia! 😉");
     }
 
-    if (!menu0[msg]) {
-        setTimeout(function() {
-            db[user].stage = 0
-        }, 180000);
-        
+    if (!menu0[Number(msg)] && msg != 'obrigado') {
+        db[user].stage = 5;
+        client.sendText(user, "A secretária irá te responder em breve! Caso queira encerrar a conversa com a secretária, envie *SAIR* - em letras maiúscula -, que o nosso atendimento automatizado irá retornar");
+               
     }
 
 }
+
 
 exports.execute = execute;

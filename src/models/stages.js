@@ -19,6 +19,10 @@ var stages = {
         descricao: "Duvidas e Esclarecimentos",
         obj: require("../stages/4"),
     },
+    5: {
+        descricao: "Conversa com Atendente",
+        obj: require("../stages/5"),
+    }
 
 };
 

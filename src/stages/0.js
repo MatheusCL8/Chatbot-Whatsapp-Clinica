@@ -24,7 +24,7 @@ function execute(user, msg, contato,client) {
 
     db[user].stage = 1;
 
-    let text=`${time}, a *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA* agradece seu contato, ${contato}.\nPara facilitar o atendimento, envie uma das opções abaixo, conforme a sua dúvida. Como podemos ajudar? 🥰\n\n${menu}`;
+    let text=`${time}, a *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA* agradece seu contato, ${contato}.\nPara facilitar o atendimento, envie uma das opções abaixo, conforme a sua dúvida. Caso queira falar diretamente com a secretária, mande uma mensagem normalmente, ela irá conversar com você. Como podemos ajudar? 🥰\n\n${menu}`;
 
     client.sendText(user,text)
       .then((result) => {
