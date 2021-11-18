@@ -13,7 +13,7 @@ function execute(user, msg,contato,client) {
 
     if (Number(msg)-1 in hora_unimed) {
         db[user].stage = 1;
-        let text=`*${hora_unimed[Number(msg)-1].description}*\n${hora_unimed[Number(msg)-1].h}\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 7️⃣ para encerrar\n${menu}`;
+        let text=`*${hora_unimed[Number(msg)-1].description}*\n${hora_unimed[Number(msg)-1].h}\n\n\nEnvie uma das opções abaixo, conforme a sua dúvida ou envie 6️⃣ para encerrar\n${menu}`;
         client.sendImage(user,`./src/imagens/${hora_unimed[Number(msg)-1].description}.jpg`,'horario',text)
         .then((result) => {
             console.log('Result: ', result); //return object success

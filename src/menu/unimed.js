@@ -1,7 +1,7 @@
 const horario = {
     0: {
         description: "Dr. Kalil Antônio Kzan Pereira",
-        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 6️⃣ - Dúvidas e Esclarecimentos",
+        h: "_Mensalmente (Flexível)_\nPara mais detalhes, mande mensagem para a administração no menu 4️⃣ - Dúvidas e Esclarecimentos",
       },
     1: {
       description: "Dr. Igor Ramos",

@@ -37,7 +37,7 @@ function execute(user, msg,contato,client) {
         
     }
     if (msg === "7") {
-        db[user].stage = 1;
+        db[user].stage = 0;
         let resp=[`Agradecemos o seu contato! Esperamos poder falar com você novamente, ${contato}.`,
         "Caso queira ficar por dentro de tudo sobre a *ESPAÇO SAÚDE - CLÍNICA ÍNTEGRADA MÉDICA E ODONTOLÓGICA*, siga a gente nas redes sociais! Acesse os links e faça parte de nossa família"
 ];
@@ -49,15 +49,16 @@ function execute(user, msg,contato,client) {
             db[user].stage = 0
         }, 180000);
     }
-    if(msg.toLowerCase().match(/obrigado/)){
-        db[user].stage = 0;
-        client.sendText(user, "Nós que agradecemos! Tenha um ótimo dia! 😉");
-    }
 
+<<<<<<< HEAD
     if (!menu0[Number(msg)] && msg != 'obrigado') {
         db[user].stage = 5;
         client.sendText(user, "A secretária irá te responder em breve! Caso queira encerrar a conversa com a secretária, envie *SAIR* - em letras maiúscula -, que o nosso atendimento automatizado irá retornar");
                
+=======
+    if (!menu0[msg]) {
+        client.sendText( user,"Desculpe, mas você digitou um codigo inválido ❌\nPor Favor, selecione cum codigo válido ✔")
+>>>>>>> parent of eccf7ff (Atualização de mensagem)
     }
 
 }
